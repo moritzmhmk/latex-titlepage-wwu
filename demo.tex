@@ -1,0 +1,36 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[german]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+
+\usepackage{wwutitlepage}
+
+% Meta font needs to be installed!
+\usepackage{fontspec}
+\setmainfont[
+	UprightFont={*},
+	BoldFont={* Bold},
+	ItalicFont={* Italic},
+    SmallCapsFont={Meta SC Offc Pro}
+]{Meta Offc Pro}
+
+\definecolor{titlepagecolor}{cmyk}{1.0,0.35,0.0,0.40} % Pantone 7462
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\wwutitlepage
+  [titlepagecolor] % color theme
+  {example-image} % logo of institute 
+  {An dieser Stelle steht der Titel \\ des Printprodukts.} % title
+  {Zusätzliche Informationen und Bezeichnungen werden an dieser Stelle positioniert.} % subtitle
+
+% some Lorem Ipsum content
+\section{Lorem Ipsum}
+\lipsum[1-2]
+\section{Nulla malesuada}
+\lipsum[3-4]
+\section{Fusce mauris}
+\lipsum[5-6]
+
+\end{document}
